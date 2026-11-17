@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Donate Us | Sangeet Foundation</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Public+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="note">Announcement: We welcome our new patron Padma Shri Dr. Mithu Alur. <a href="#">Click here.</a> Our new General Secretary: Lohit Kumar Das.</div>
+<header>
+  <div class="header-wrap bar">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Sangeet Foundation logo">
+      Sangeet Foundation
+    </a>
+
+    <button class="menu" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <img src="images/menu.png" alt="">
+    </button>
+
+    <nav id="nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+
+      <!-- About Submenu -->
+      <div class="dd">
+        <button class="dd-btn" type="button" aria-expanded="false" aria-controls="menu-about" aria-label="Show About submenu">
+          <span class="dd-top">About</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="dd-menu" id="menu-about">
+          <a href="about.html">About Us</a>
+          <a href="team.html">Team</a>
+          <a href="partners.html">Partners</a>
+        </div>
+      </div>
+
+      <a href="resources.html">Resources</a>
+      <a href="events.html">Events</a>
+
+      <!-- Media Submenu -->
+      <div class="dd">
+        <button class="dd-btn" type="button" aria-expanded="false" aria-controls="menu-media" aria-label="Show Media submenu">
+          <span class="dd-top">Media</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="dd-menu" id="menu-media">
+          <a href="gallery.html">Gallery</a>
+          <a href="video.html">Video</a>
+          <a href="endorsement.html">Endorsement</a>
+          <a href="brochure.html">Brochure</a>
+          <a href="in-the-news.html">In the News</a>
+        </div>
+      </div>
+
+      <a href="sponsors.html">Sponsor</a>
+      <a href="blog.html">Blog</a>
+
+      <!-- Contact Submenu -->
+      <div class="dd dd-right">
+        <button class="dd-btn" type="button" aria-expanded="false" aria-controls="menu-contact" aria-label="Show Contact submenu">
+          <span class="dd-top">Contact</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="dd-menu" id="menu-contact">
+          <a href="contact.html">Contact Us</a>
+          <a href="getting-involved.html">Getting Involved</a>
+        </div>
+      </div>
+
+      <a class="btn btn-y" href="donate.html">Donate now</a>
+    </nav>
+  </div>
+</header>
+
+  <main>
+    <section class="phero">
+      <div class="wrap">
+        <h1>Donate for a cause</h1>
+        <div class="breadcumb">
+          <ul>
+            <li class="breadcumb-listing"><a href="index.html">Home >&nbsp;</a> </li>
+            <li>Donate Us</li>
+          </ul>
+        </div>
+        <p class="lede">We work towards building healthier
+          communities, empowering patients with knowledge, and making quality healthcare accessible to all.
+          empowering patients with knowledge, and making quality healthcare accessible to all.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="donate-wrap donate-dwrap">
+
+        <div class="donate-card">
+          <form id="df" novalidate>
+            <div class="donate-card-top">
+              <h2>Make a donation</h2>
+              <p>Three quick steps. It takes about a minute.</p>
+            </div>
+            <div class="donate-steps">
+
+              <div class="donate-step">
+                <h3>Choose your gift</h3>
+                <div class="donate-seg" role="radiogroup" aria-label="Frequency">
+                  <input type="radio" name="freq" id="f1" value="One-off" checked><label for="f1">One-off</label>
+                  <input type="radio" name="freq" id="f2" value="Monthly"><label for="f2">Monthly</label>
+                </div>
+                <div class="donate-amts" role="radiogroup" aria-label="Choose an amount">
+                  <input type="radio" name="preset" id="a20" value="20"><label for="a20"><b>£20</b></label>
+                  <input type="radio" name="preset" id="a40" value="40"><label for="a40"><b>£40</b></label>
+                  <input type="radio" name="preset" id="a60" value="60"><label for="a60"><b>£60</b></label>
+                  <input type="radio" name="preset" id="a80" value="80"><label for="a80"><b>£80</b></label>
+                </div>
+                <div class="donate-other">
+                  <label class="donate-l" for="amt">Or enter another amount</label>
+                  <div class="donate-money"><span aria-hidden="true">£</span><input class="donate-inp" id="amt"
+                      name="amount" type="text" inputmode="decimal" placeholder="Enter your amount" autocomplete="off"
+                      aria-describedby="amt-e"></div>
+                  <p class="donate-err" id="amt-e" role="alert"></p>
+                </div>
+              </div>
+
+              <div class="donate-step">
+                <h3>Boost it with Gift Aid</h3>
+                <div class="donate-pick" role="radiogroup" aria-label="Gift Aid">
+                  <input type="radio" name="ga" id="gy" value="yes" checked><label for="gy"><b>Yes, add Gift
+                      Aid</b><span>I am a UK taxpayer. We receive 25% more at no cost to you.</span></label>
+                  <input type="radio" name="ga" id="gn" value="no"><label for="gn"><b>No, thanks</b><span>Donate the
+                      amount I chose without Gift Aid.</span></label>
+                </div>
+                <div class="donate-ga" id="ga">
+                  <div class="donate-two">
+                    <div class="donate-row donate-full"><label class="donate-l" for="nm">Name</label><input
+                        class="donate-inp" id="nm" name="name" type="text" placeholder="Enter your name"
+                        autocomplete="name">
+                      <p class="donate-err" id="nm-e" role="alert"></p>
+                    </div>
+                    <div class="donate-row"><label class="donate-l" for="ad">Address</label><input class="donate-inp"
+                        id="ad" name="address" type="text" placeholder="Enter your address"
+                        autocomplete="street-address">
+                      <p class="donate-err" id="ad-e" role="alert"></p>
+                    </div>
+                    <div class="donate-row"><label class="donate-l" for="pc">Post code</label><input class="donate-inp"
+                        id="pc" name="postcode" type="text" placeholder="Enter your post code"
+                        autocomplete="postal-code">
+                      <p class="donate-err" id="pc-e" role="alert"></p>
+                    </div>
+                  </div>
+                  <label class="donate-consent"><input type="checkbox" id="cn"><span>I confirm I am a UK taxpayer and
+                      want Sangeet Foundation to reclaim tax on this and any future donations. I understand I must pay
+                      at least as much Income Tax or Capital Gains Tax as the Gift Aid claimed.</span></label>
+                  <p class="donate-err" id="cn-e" role="alert"></p>
+                </div>
+              </div>
+
+              <div class="donate-step">
+                <h3>Review and submit</h3>
+                <p style="margin:0;color:var(--mut);font-size:.95rem">Check your total below, then submit. Registered
+                  charity no. 1195762.</p>
+              </div>
+
+            </div>
+
+            <div class="donate-dbar" aria-live="polite">
+              <div>
+                <small>Your donation</small>
+                <div class="donate-tot" id="tot">£0.00</div>
+                <div class="donate-gat" id="gaadd">With Gift Aid: <span id="gat">£0.00</span></div>
+              </div>
+              <button class="donate-btn donate-sub" type="submit" id="sbtn">Submit</button>
+            </div>
+          </form>
+
+          <div class="donate-ok" id="ok" role="status" tabindex="-1">
+            <div class="donate-tick" aria-hidden="true">&#10003;</div>
+            <h2>Thank you</h2>
+            <p id="okmsg" style="color:var(--mut);max-width:48ch;margin:0 auto 1.4em"></p>
+            <button class="donate-btn donate-btn-y" type="button" id="again">Make another donation</button>
+          </div>
+        </div>
+
+        <div class="donate-side">
+          <div class="donate-bank">
+            <div class="donate-bhead">
+              <span class="donate-bico" aria-hidden="true"><svg viewBox="0 0 24 24">
+                  <path d="M3 10l9-6 9 6" />
+                  <path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8" />
+                  <path d="M3 21h18" />
+                </svg></span>
+              <h3>For account transfer</h3>
+            </div>
+            <p class="donate-sub2">Prefer your bank app? Send your gift directly.</p>
+            <dl class="donate-rows">
+              <div class="donate-r">
+                <div>
+                  <dt>Account name</dt>
+                  <dd>Sangeet Global Limited</dd>
+                </div><button class="donate-cp" type="button" data-v="Sangeet Global Limited">Copy</button>
+              </div>
+              <div class="donate-r">
+                <div>
+                  <dt>Sort code</dt>
+                  <dd class="donate-num">40-52-40</dd>
+                </div><button class="donate-cp" type="button" data-v="40-52-40">Copy</button>
+              </div>
+              <div class="donate-r">
+                <div>
+                  <dt>Account number</dt>
+                  <dd class="donate-num">00034282</dd>
+                </div><button class="donate-cp" type="button" data-v="00034282">Copy</button>
+              </div>
+            </dl>
+            <button class="donate-btn donate-btn-y donate-cpall" type="button" id="cpall">Copy all details</button>
+            <div class="donate-tipb"><b>Tip:</b> use your name as the payment reference so we can thank you.</div>
+          </div>
+          <div class="donate-box donate-help">
+            <h3>Need help?</h3>
+            <p>Questions about donating or Gift Aid? We are happy to help.</p>
+            <p><a href="mailto:sangeet.foundation@gmail.com">sangeet.foundation@gmail.com</a><br><a
+                href="tel:+447388908908">+44 7388 908908</a></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="donate-alt" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+            data-aos-delay="200">
+      <div class="donate-wrap">
+        <div class="donate-sechead">
+          <h2>What your gift can do</h2>
+          <p>Examples of how donations support our work. Replace with your own figures.</p>
+        </div>
+        <div class="donate-grid3">
+          <div class="donate-imp"><span class="donate-n">£20</span>
+            <p>Helps run a community music session for people who need a calm, welcoming space.</p>
+          </div>
+          <div class="donate-imp"><span class="donate-n">£40</span>
+            <p>Supports instruments and materials for a workshop series.</p>
+          </div>
+          <div class="donate-imp"><span class="donate-n">£80</span>
+            <p>Helps train volunteers who welcome and support newcomers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+            data-aos-delay="200">
+      <div class="donate-wrap">
+        <div class="donate-sechead">
+          <h2>Donation FAQs</h2>
+        </div>
+        <div class="donate-faq">
+          <details>
+            <summary>What is Gift Aid?</summary>
+            <p>If you are a UK taxpayer, Gift Aid lets us claim an extra 25p for every £1 you give, at no cost to you.
+            </p>
+          </details>
+          <details>
+            <summary>Can I donate by bank transfer?</summary>
+            <p>Yes. Use the account details shown on this page and add your name as the payment reference.</p>
+          </details>
+          <details>
+            <summary>Is my donation tax deductible?</summary>
+            <p>Sangeet Global Ltd. is a registered charity (no. 1195762). Please check with your tax adviser about
+              relief that may apply to you.</p>
+          </details>
+          <details>
+            <summary>Can I give every month?</summary>
+            <p>Yes. Choose Monthly above and we will be in touch to set it up.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+        <div class="wrap grid">
+            <div class="footer-logo"><img src="images/logo.png" alt="Sangeet Foundation logo">
+                <p>Registered as Sangeet Global Ltd. Company Reg No. 12966630; Charity Reg Number: 1195762</p>
+            </div>
+            <div>
+                <h3>It may interest you</h3>
+                <ul>
+                    <li><a href="#" id="donate">Donate now</a></li>
+                    <li><a href="#" id="sponsor">Sponsors</a></li>
+                    <li><a href="#" id="tickets">Tickets</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>To know more</h3>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Endorsement</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="tel:+447388908908">+44 7388 908908</a></li>
+                    <li><a href="mailto:sangeet.foundation@gmail.com">sangeet.foundation@gmail.com</a></li>
+                    <li>
+                        <ul class="footer-social">
+                            <li><a href="https://www.facebook.com/groups/sangeet.foundation"><img
+                                        src="images/facebook.svg"></a></li>
+                            <li><a
+                                    href="https://www.instagram.com/sangeetfoundation?stkn=aWF5NDE3bGk3ZXBn&utm_source=qr"><img
+                                        src="images/instagram.svg"></a></li>
+                            <li><a href="https://www.youtube.com/@sangeetfoundation"><img src="images/youtube.svg"></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/sangeet-foundation-16ab9921b/"><img
+                                        src="images/linkedin.svg"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrap">
+            <div class="copy"><b>Sangeet Global Ltd. © 2026</b><br>Proudly built by Truepid Technologies</div>
+        </div>
+    </footer>
+
+  <script>
+    const $ = id => document.getElementById(id), f = $('df'), amt = $('amt'), tot = $('tot'), gat = $('gat'), ga = $('ga'), gaadd = $('gaadd');
+    const gbp = v => '£' + v.toFixed(2);
+    const val = () => { const v = parseFloat(amt.value.replace(/[£,\s]/g, '')); return isFinite(v) && v > 0 ? Math.round(v * 100) / 100 : 0 };
+    const gaOn = () => f.ga.value === 'yes';
+    function sum() { const v = val(); tot.textContent = gbp(v); gat.textContent = gbp(v * 1.25); gaadd.hidden = !gaOn(); ga.hidden = !gaOn(); $('sbtn').textContent = v ? 'Donate ' + gbp(v) : 'Submit' }
+
+    // presets <-> custom amount
+    document.querySelectorAll('input[name=preset]').forEach(r => r.onchange = () => { amt.value = r.value; amt.removeAttribute('aria-invalid'); $('amt-e').textContent = ''; sum() });
+    amt.addEventListener('input', () => {
+      amt.value = amt.value.replace(/[^0-9.]/g, '');
+      document.querySelectorAll('input[name=preset]').forEach(r => r.checked = (r.value === amt.value));
+      sum();
+    });
+    document.querySelectorAll('input[name=ga]').forEach(r => r.onchange = sum);
+
+    function bad(id, eid, msg) { const el = $(id); if (el) { el.setAttribute('aria-invalid', 'true') } $(eid).textContent = msg; return false }
+    function clear() { ['amt', 'nm', 'ad', 'pc'].forEach(i => $(i).removeAttribute('aria-invalid'));['amt-e', 'nm-e', 'ad-e', 'pc-e', 'cn-e'].forEach(i => $(i).textContent = '') }
+
+    f.addEventListener('submit', e => {
+      e.preventDefault(); clear(); let ok = true, first = null;
+      const flag = (id, eid, msg) => { bad(id, eid, msg); ok = false; first = first || $(id) };
+      if (!val()) flag('amt', 'amt-e', 'Enter an amount or choose one.');
+      if (gaOn()) {
+        if (!$('nm').value.trim()) flag('nm', 'nm-e', 'Enter your name.');
+        if (!$('ad').value.trim()) flag('ad', 'ad-e', 'Enter your address.');
+        if (!/^[A-Za-z]{1,2}\d[A-Za-z\d]?\s*\d[A-Za-z]{2}$/.test($('pc').value.trim())) flag('pc', 'pc-e', 'Enter a valid UK post code.');
+        if (!$('cn').checked) { $('cn-e').textContent = 'Please confirm to claim Gift Aid.'; ok = false; first = first || $('cn') }
+      }
+      if (!ok) { first.focus(); return }
+      // TODO: send to your payment provider / server here.
+      $('okmsg').textContent = 'Your ' + f.freq.value.toLowerCase() + ' donation of ' + gbp(val()) + (gaOn() ? ' with Gift Aid (' + gbp(val() * 1.25) + ' in total)' : '') + ' has been recorded. Please complete payment by bank transfer using the details on this page.';
+      f.hidden = true; $('ok').classList.add('donate-show'); $('ok').focus();
+    });
+    $('again').onclick = () => { f.reset(); f.hidden = false; $('ok').classList.remove('donate-show'); sum(); amt.focus() };
+
+    // copy bank details
+    document.querySelectorAll('.donate-cp').forEach(b => b.onclick = async () => {
+      try { await navigator.clipboard.writeText(b.dataset.v); b.textContent = 'Copied' } catch (e) { b.textContent = 'Failed' }
+      setTimeout(() => b.textContent = 'Copy', 1600);
+    });
+    $('cpall').onclick = async () => {
+      const b = $('cpall');
+      try { await navigator.clipboard.writeText('Account name: Sangeet Global Limited\nSort code: 40-52-40\nAccount number: 00034282'); b.textContent = 'Copied' } catch (e) { b.textContent = 'Copy failed' }
+      setTimeout(() => b.textContent = 'Copy all details', 1800);
+    };
+    sum();
+  </script>
+
+  <script src="js/script.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
